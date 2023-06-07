@@ -1,0 +1,19 @@
+// Mixins: bloques de código que pueden ser reutilizados en otras partes del proyecto
+
+// Sintaxis:
+
+// @mixin example() {
+//     *Estilos aquí*
+// }
+
+// Pueden recibir parámetros:
+// @mixin example($bacground) {
+//     background-color: $background;
+//     *Resto de estilos aquí*
+// }
+
+// Pueden recibir parámetros y setear su valore:
+// @mixin example($bacground: red) {
+//     background-color: $background;
+//     *Resto de estilos aquí*
+// }
