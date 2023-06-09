@@ -1,30 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.home {
-width: 100%;
-height: 100;
+// Import Variables, Mixins, Base, Animations
+@use "./variables";
+@use "./mixins";
+@use "./base";
 
 
+// Components
+@use "./components/button";
 
-}
-.nav__bar {
-    height: 55px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.menu__botton {
-display:flex;
-align-items: center;
-justify-content: space-between;
-}
-.menu__list {
-width: 300px;
-    display: flex;
-justify-content: space-around;
-}
-
+// Sections
+@use "./home/partners"
