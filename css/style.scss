@@ -2,10 +2,10 @@
 @use "./variables";
 @use "./mixins";
 @use "./base";
-
+@use "./animations";
 
 // Components
 @use "./components/button";
 
 // Sections
-@use "./home/partners"
+@use "./home/partners";

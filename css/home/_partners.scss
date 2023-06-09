@@ -1,4 +1,27 @@
 @use "../variables";
 @use "../mixins";
-@use "../base";
 
+.partners__container {
+    background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
+    padding: 24px 16.45px 62px 15.55px;
+    display: flex;
+
+    @include mixins.center;
+
+    .partners__title {
+        margin-bottom: 32px;
+        // @mixin h2-font-style
+        font-family: variables.$font-abril-fatface;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .partners-block__items {
+        list-style-type: none;
+        text-decoration: none;
+        color: inherit; // White
+    }
+}

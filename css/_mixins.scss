@@ -21,3 +21,14 @@
 //     background-color: $background;
 //     *Resto de estilos aquí*
 // }
+
+
+@mixin center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// @mixin font-h2 {
+//     font-family: variables.$font-abril-fatface;
+// }
