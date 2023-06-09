@@ -32,3 +32,25 @@
 // @mixin font-h2 {
 //     font-family: variables.$font-abril-fatface;
 // }
+
+// @mixin bttn-template ($width: 129px, $height: 32px) {
+//     width: $width;
+//     height: $height;
+//     border: none;
+//     display: flex;
+//     text-align: center;
+//     letter-spacing: 0.05rem;
+//     // align-items: center;
+//     //  font-weight: ;
+
+// }
+
+@mixin responsive($breakpoint) {
+
+    @if ($breakpoint ==variables.$large) {
+        @media screen and (min-width: variables.$large) {
+            @content;
+        }
+    }
+
+}
