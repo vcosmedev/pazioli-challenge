@@ -25,18 +25,29 @@
   }
 }
 .partners__container .partners__title {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-family: "Abril Fatface", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 288px;
 }
 @media screen and (min-width: 992px) {
   .partners__container .partners__title {
     font-size: 32px;
+    margin-bottom: 49px;
+    width: 470px;
   }
+}
+.partners__container .partners-top .petrof-img {
+  margin: 8px 0 0 18px;
+}
+.partners__container .partners-top .petrof-span {
+  margin-right: 30px;
 }
 @media screen and (min-width: 992px) {
   .partners__container .partners-top {
@@ -46,6 +57,15 @@
   .partners__container .partners-top .paris-pian-spn {
     margin-right: 30px;
   }
+  .partners__container .partners-top .paris-pian-img {
+    margin: 18px 0 0 2px;
+  }
+}
+.partners__container .partners-mid .bookpa-spn {
+  margin: 30px;
+}
+.partners__container .partners-mid .bookpa-img {
+  margin: 10px 0 0 10px;
 }
 @media screen and (min-width: 992px) {
   .partners__container .partners-mid {
@@ -57,25 +77,35 @@
   .partners__container .partners-mid .yamaha-spn {
     margin-left: 30px;
   }
+  .partners__container .partners-mid .hefilti-img {
+    margin: 11px 0 0 13px;
+  }
+}
+.partners__container .partners-bttm .pianotwo-spn {
+  margin-right: 30px;
+}
+.partners__container .partners-bttm .pianotwo-img {
+  margin: 13px;
+}
+.partners__container .partners-bttm .piafmar-img {
+  margin: 12px 0 0 20px;
+}
+.partners__container .partners-bttm .piafmar-spn {
+  margin-right: 30px;
 }
 @media screen and (min-width: 992px) {
   .partners__container .partners-bttm {
     display: flex;
     justify-content: center;
   }
-  .partners__container .partners-bttm .partners-block__items--link {
-    border-bottom-right-radius: 250px;
-    border-top-right-radius: 250px;
-  }
-  .partners__container .partners-bttm .piafmar-spn {
-    margin-right: 30px;
-  }
+}
+.partners__container .list-style {
+  list-style-type: none;
 }
 .partners__container .partners-block__items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style-type: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-style: normal;

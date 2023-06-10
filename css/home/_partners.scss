@@ -21,7 +21,7 @@
     }
 
     .partners__title {
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         // @mixin h2-font-style
         font-family: variables.$font-abril-fatface;
         font-style: normal;
@@ -29,13 +29,29 @@
         font-size: 24px;
         line-height: 32px;
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 288px;
 
         @include mixins.responsive(variables.$large) {
             font-size: 32px;
+            margin-bottom: 49px;
+            width: 470px;
+
         }
     }
 
     .partners-top {
+
+        .petrof-img {
+            margin: 8px 0 0 18px;
+        }
+
+        .petrof-span {
+            margin-right: 30px;
+        }
+
+
         @include mixins.responsive(variables.$large) {
             display: flex;
             justify-content: center;
@@ -43,10 +59,23 @@
             .paris-pian-spn {
                 margin-right: 30px;
             }
+
+            .paris-pian-img {
+                margin: 18px 0 0 2px;
+            }
         }
     }
 
     .partners-mid {
+
+        .bookpa-spn {
+            margin: 30px;
+        }
+
+        .bookpa-img {
+            margin: 10px 0 0 10px;
+        }
+
         @include mixins.responsive(variables.$large) {
             display: flex;
 
@@ -58,30 +87,50 @@
                 margin-left: 30px;
             }
 
+            .hefilti-img {
+                margin: 11px 0 0 13px;
+            }
+
         }
     }
 
     .partners-bttm {
+
+        .pianotwo-spn {
+            margin-right: 30px;
+        }
+
+        .pianotwo-img {
+            margin: 13px;
+        }
+
+        .piafmar-img {
+            margin: 12px 0 0 20px;
+        }
+
+        .piafmar-spn {
+            margin-right: 30px;
+        }
+
+        // .partners-block__items--link {
+        //     border-bottom-right-radius: 250px;
+        //     border-top-right-radius: 250px;
+        // }
+
         @include mixins.responsive(variables.$large) {
             display: flex;
             justify-content: center;
-
-            .partners-block__items--link {
-                border-bottom-right-radius: 250px;
-                border-top-right-radius: 250px;
-            }
-
-            .piafmar-spn {
-                margin-right: 30px;
-            }
         }
+    }
+
+    .list-style {
+        list-style-type: none;
     }
 
     .partners-block__items {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        list-style-type: none;
         text-decoration: none;
         font-family: variables.$font-raleway;
         font-style: normal;
