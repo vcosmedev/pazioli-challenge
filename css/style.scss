@@ -1,30 +1,164 @@
+@import "./variables";
 * {
     margin: 0;
-    padding: 0;
-}
+    padding: 0;}
+
+$icon-1: './assets/icons/Vector-1.png';
+$icon-2: './assets/icons/Vector.png';
+
+
+
 
 .home {
-width: 100%;
-height: 100;
+  width: 100vw;
+  height: 100%;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
 
-
-
-}
 .nav__bar {
-    height: 55px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.img__icon--container {
+    margin-left: 30px;
+}
 .menu__botton {
-display:flex;
-align-items: center;
-justify-content: space-between;
-}
-.menu__list {
-width: 300px;
-    display: flex;
-justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
+.menu__list {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none; 
+
+  li {
+    a {
+        font-size: 14px;
+      text-decoration: none; 
+      color: #000; 
+      
+
+    
+    }
+  }
+}
+
+
+
+.button__template,
+.contact__button {
+  padding: 3px 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+.button__template--white {
+    padding: 3px 25px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+  }
+  
+
+.icon__button {
+  position: relative;
+  width: 40px; 
+  height: 40px; 
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  &:before {
+    background-image: url($icon-1);
+    left: 0;
+  }
+  
+  &:after {
+    background-image: url($icon-2);
+    right: 0;
+  }
+  
+
+  
+ 
+  margin-left: 10px;
+  border-radius: 5px;
+//   background-color: #eeeeee;
+  cursor: pointer;
+}
+//  */aqui comienza la segunda parte*/
+.landing__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    p {
+      font-family:$font-raleway;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #858585;
+      ;
+    }
+    
+    h1 {
+      font-family: "Abril Fatface", cursive;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 76px;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+  }
+  
+  .button__container {
+    margin-top: 20px;
+  }
+  
+  .button__template {
+    margin: 10px;
+  }
+  .social__media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .social__media a {
+    margin-left: 20px; 
+
+ }
+  
+ @media screen and (max-width: 992px) {
+    .menu__list,
+    .contact__button,.social__media {
+      display: none;
+    }
+  }
