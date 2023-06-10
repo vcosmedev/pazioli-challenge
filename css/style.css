@@ -38,9 +38,43 @@
     font-size: 32px;
   }
 }
+@media screen and (min-width: 992px) {
+  .partners__container .partners-top {
+    display: flex;
+    justify-content: center;
+  }
+  .partners__container .partners-top .paris-pian-spn {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .partners__container .partners-mid {
+    display: flex;
+  }
+  .partners__container .partners-mid .hefilti-spn {
+    margin-left: 30px;
+  }
+  .partners__container .partners-mid .yamaha-spn {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .partners__container .partners-bttm {
+    display: flex;
+    justify-content: center;
+  }
+  .partners__container .partners-bttm .partners-block__items--link {
+    border-bottom-right-radius: 250px;
+    border-top-right-radius: 250px;
+  }
+  .partners__container .partners-bttm .piafmar-spn {
+    margin-right: 30px;
+  }
+}
 .partners__container .partners-block__items {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   list-style-type: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;

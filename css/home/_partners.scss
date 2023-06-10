@@ -35,9 +35,52 @@
         }
     }
 
+    .partners-top {
+        @include mixins.responsive(variables.$large) {
+            display: flex;
+            justify-content: center;
+
+            .paris-pian-spn {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .partners-mid {
+        @include mixins.responsive(variables.$large) {
+            display: flex;
+
+            .hefilti-spn {
+                margin-left: 30px;
+            }
+
+            .yamaha-spn {
+                margin-left: 30px;
+            }
+
+        }
+    }
+
+    .partners-bttm {
+        @include mixins.responsive(variables.$large) {
+            display: flex;
+            justify-content: center;
+
+            .partners-block__items--link {
+                border-bottom-right-radius: 250px;
+                border-top-right-radius: 250px;
+            }
+
+            .piafmar-spn {
+                margin-right: 30px;
+            }
+        }
+    }
+
     .partners-block__items {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         list-style-type: none;
         text-decoration: none;
         font-family: variables.$font-raleway;
@@ -53,11 +96,6 @@
         margin: 32px;
         padding: 10px;
         border-radius: 1000px;
-
-        // @include mixins.responsive(variables.$large) {
-        //     display: flex;
-        //     justify-content: center;
-        // }
     }
 
     .partners-block__items--hidden {
