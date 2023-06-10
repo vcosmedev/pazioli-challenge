@@ -29,18 +29,51 @@
         font-size: 24px;
         line-height: 32px;
         text-align: center;
+
+        @include mixins.responsive(variables.$large) {
+            font-size: 32px;
+        }
     }
 
     .partners-block__items {
+        display: flex;
+        align-items: center;
         list-style-type: none;
         text-decoration: none;
-        // White
         font-family: variables.$font-raleway;
         font-style: normal;
         font-weight: 400;
-        font-size: 28px;
+        font-size: 32px;
         line-height: 38px;
         font-variant: small-caps;
         color: variables.$brown-800;
+        background-color: variables.$black-900;
+        width: 288px;
+        height: 93px;
+        margin: 32px;
+        padding: 10px;
+        border-radius: 1000px;
+
+        // @include mixins.responsive(variables.$large) {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+    }
+
+    .partners-block__items--hidden {
+        display: none;
+
+        @include mixins.responsive(variables.$large) {
+            display: contents;
+        }
+    }
+
+    .bg-icon {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 1000px;
+        border: 0.889758px solid #FFFFFF;
+        // position: absolute;
+        width: 68.98px;
+        height: 68.98px;
     }
 }
