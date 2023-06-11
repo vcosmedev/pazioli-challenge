@@ -43,20 +43,30 @@
 
 .button__template,
 .contact__button {
-  padding: 3px 30px;
+  background-color: #000000;
+  color: #FFFFFF;
   border-radius: 5px;
-  background-color: black;
-  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.button__template--white {
+.contact__button:hover {
+  background-color: #3F3F3F;
+}
+
+.contact__button:active {
+  background-color: #000000;
+}
+.contact__button:active .button__template--white {
   padding: 3px 25px;
   border-radius: 5px;
   background-color: white;
   color: black;
 }
-
-.icon__button {
+.contact__button:active .icon__button {
   position: relative;
   width: 40px;
   height: 40px;
@@ -67,7 +77,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.icon__button:before, .icon__button:after {
+.contact__button:active .icon__button:before, .contact__button:active .icon__button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -78,16 +88,15 @@
   background-position: center;
   background-size: contain;
 }
-.icon__button:before {
+.contact__button:active .icon__button:before {
   background-image: url("./assets/icons/Vector-1.png");
   left: 0;
 }
-.icon__button:after {
+.contact__button:active .icon__button:after {
   background-image: url("./assets/icons/Vector.png");
   right: 0;
 }
-
-.landing__container {
+.contact__button:active .landing__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +104,7 @@
   text-align: center;
   margin-top: 60px;
 }
-.landing__container p {
+.contact__button:active .landing__container p {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -104,7 +113,7 @@
   text-align: center;
   color: #858585;
 }
-.landing__container h1 {
+.contact__button:active .landing__container h1 {
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 400;
@@ -112,54 +121,46 @@
   letter-spacing: 0.05em;
   text-align: center;
 }
-
-.button__container {
+.contact__button:active .button__container {
   margin-top: 20px;
 }
-
-.button__template {
+.contact__button:active .button__template {
   margin: 10px;
 }
-
-.social__media {
+.contact__button:active .social__media {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
-.social__media a {
+.contact__button:active .social__media a {
   margin-right: 60px;
   margin-bottom: 9px;
 }
-
-.container {
+.contact__button:active .container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-
-.piano__landing {
+.contact__button:active .piano__landing {
   position: relative;
 }
-
-.social__media {
+.contact__button:active .social__media {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-
 @media screen and (max-width: 992px) {
-  .menu__list,
-  .contact__button, .social__media {
+  .contact__button:active .menu__list,
+  .contact__button:active .contact__button, .contact__button:active .social__media {
     display: none;
   }
-  .menu__list .piano__landing,
-  .contact__button .piano__landing, .social__media .piano__landing {
+  .contact__button:active .menu__list .piano__landing,
+  .contact__button:active .contact__button .piano__landing, .contact__button:active .social__media .piano__landing {
     display: flex;
     justify-content: center;
   }
-  .menu__list .piano__landing h1,
-  .contact__button .piano__landing h1, .social__media .piano__landing h1 {
+  .contact__button:active .menu__list .piano__landing h1,
+  .contact__button:active .contact__button .piano__landing h1, .contact__button:active .social__media .piano__landing h1 {
     font-size: 32.5px;
   }
 }/*# sourceMappingURL=style.css.map */

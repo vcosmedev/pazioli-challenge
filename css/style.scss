@@ -1,7 +1,8 @@
 @import "./variables";
 * {
     margin: 0;
-    padding: 0;}
+    padding: 0;
+  }
 
 .home {
   width: 100vw;
@@ -49,12 +50,27 @@ font-family: $font-raleway;
 
 
 .button__template,
-.contact__button {
-  padding: 3px 30px;
+
+
+.contact__button{
+  background-color: #000000 ;
+  color: #FFFFFF;
   border-radius: 5px;
-  background-color: black;
-  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
+.contact__button:hover{
+  background-color: #3F3F3F;
+}
+.contact__button:active{
+  background-color: #000000;
+
+
+
+
 .button__template--white {
     padding: 3px 25px;
     border-radius: 5px;
@@ -180,3 +196,4 @@ font-family: $font-raleway;
     }
   }
 
+}
