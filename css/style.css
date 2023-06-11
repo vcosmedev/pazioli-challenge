@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .home {
@@ -37,36 +38,43 @@
 }
 .menu__list li a {
   font-size: 14px;
+  font-weight: bold;
   text-decoration: none;
   color: #000;
 }
 
 .button__template,
 .contact__button {
-  background-color: #000000;
-  color: #FFFFFF;
+  padding: 3px 30px;
   border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
-.contact__button:hover {
-  background-color: #3F3F3F;
-}
-
-.contact__button:active {
-  background-color: #000000;
-}
-.contact__button:active .button__template--white {
+.button__template--white {
   padding: 3px 25px;
   border-radius: 5px;
   background-color: white;
   color: black;
+  font-weight: bold;
 }
-.contact__button:active .icon__button {
+
+.button__template,
+.button__template--white,
+.contact__button,
+.icon__button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button__template:hover,
+.button__template--white:hover,
+.contact__button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.icon__button {
   position: relative;
   width: 40px;
   height: 40px;
@@ -77,7 +85,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.contact__button:active .icon__button:before, .contact__button:active .icon__button:after {
+.icon__button:before, .icon__button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -88,15 +96,8 @@
   background-position: center;
   background-size: contain;
 }
-.contact__button:active .icon__button:before {
-  background-image: url("./assets/icons/Vector-1.png");
-  left: 0;
-}
-.contact__button:active .icon__button:after {
-  background-image: url("./assets/icons/Vector.png");
-  right: 0;
-}
-.contact__button:active .landing__container {
+
+.landing__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +105,7 @@
   text-align: center;
   margin-top: 60px;
 }
-.contact__button:active .landing__container p {
+.landing__container p {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -113,54 +114,69 @@
   text-align: center;
   color: #858585;
 }
-.contact__button:active .landing__container h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 56px;
+.landing__container h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 76px;
-  letter-spacing: 0.05em;
+  line-height: 43px;
   text-align: center;
+  color: #000000;
+  margin: 1.5rem 0;
 }
-.contact__button:active .button__container {
+
+.button__container {
   margin-top: 20px;
 }
-.contact__button:active .button__template {
+
+.button__template {
   margin: 10px;
 }
-.contact__button:active .social__media {
+
+.social__media {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.contact__button:active .social__media a {
-  margin-right: 60px;
+
+.social__media a {
+  margin-right: 90px;
   margin-bottom: 9px;
 }
-.contact__button:active .container {
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-.contact__button:active .piano__landing {
-  position: relative;
+
+.piano__landing {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
-.contact__button:active .social__media {
+.piano__landing img {
+  width: 100%;
+}
+
+.social__media {
   position: absolute;
   bottom: 0;
   right: 0;
 }
+
 @media screen and (max-width: 992px) {
-  .contact__button:active .menu__list,
-  .contact__button:active .contact__button, .contact__button:active .social__media {
+  .menu__list,
+  .contact__button, .social__media {
     display: none;
   }
-  .contact__button:active .menu__list .piano__landing,
-  .contact__button:active .contact__button .piano__landing, .contact__button:active .social__media .piano__landing {
+  .menu__list .piano__landing,
+  .contact__button .piano__landing, .social__media .piano__landing {
     display: flex;
     justify-content: center;
   }
-  .contact__button:active .menu__list .piano__landing h1,
-  .contact__button:active .contact__button .piano__landing h1, .contact__button:active .social__media .piano__landing h1 {
+  .menu__list .piano__landing h1,
+  .contact__button .piano__landing h1, .social__media .piano__landing h1 {
     font-size: 32.5px;
   }
 }/*# sourceMappingURL=style.css.map */
