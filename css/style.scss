@@ -182,7 +182,7 @@ font-family: $font-raleway;
   
   .piano__landing {
     
-    width: 100%;
+    width: 50%;
     margin-top: 5rem;
     text-align: center;
     filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
@@ -203,9 +203,9 @@ font-family: $font-raleway;
       .piano__landing{
         display:flex;
         justify-content: center;
-        h1 {
-            font-size: 32.5px;
-        }
+        // h1 {
+        //     font-size: 32.5px;
+        // }
       }
     }
   }
