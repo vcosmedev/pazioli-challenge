@@ -44,6 +44,12 @@
     }
 
     .partners-top {
+
+        .partners-block__items--right {
+            border-bottom-right-radius: 250px;
+            border-top-right-radius: 250px;
+        }
+
         .petrof-img {
             margin: 8px 0 0 18px;
         }
@@ -55,6 +61,11 @@
         @include mixins.responsive(variables.$large) {
             display: flex;
             justify-content: center;
+
+            .partners-block__items--right {
+                border-bottom-right-radius: 1000px;
+                border-top-right-radius: 1000px;
+            }
 
             .paris-pian-spn {
                 margin-right: 30px;
@@ -75,8 +86,18 @@
             margin: 10px 0 0 10px;
         }
 
+        .partners-block__items--left {
+            border-bottom-left-radius: 250px;
+            border-top-left-radius: 250px;
+        }
+
         @include mixins.responsive(variables.$large) {
             display: flex;
+
+            .partners-block__items--left {
+                border-bottom-left-radius: 1000px;
+                border-top-left-radius: 1000px;
+            }
 
             .hefilti-spn {
                 margin-left: 30px;
@@ -93,6 +114,7 @@
     }
 
     .partners-bttm {
+
         .pianotwo-spn {
             margin-right: 30px;
         }
@@ -109,10 +131,10 @@
             margin-right: 30px;
         }
 
-        // .partners-block__items--link {
-        //     border-bottom-right-radius: 250px;
-        //     border-top-right-radius: 250px;
-        // }
+        .partners-block__items--right {
+            border-bottom-right-radius: 250px;
+            border-top-right-radius: 250px;
+        }
 
         @include mixins.responsive(variables.$large) {
             display: flex;
@@ -156,13 +178,12 @@
         background: rgba(255, 255, 255, 0.5);
         border-radius: 1000px;
         border: 0.889758px solid #FFFFFF;
-        // position: absolute;
         width: 68.98px;
         height: 68.98px;
     }
 }
 
-// Declarar la animación
+// Declaración de la animación
 @keyframes move {
     from {
         transform: translateX(-100%);
@@ -175,8 +196,7 @@
 
 .move-right {
     animation-name: move;
-    // animation-direction: reverse;
-    animation-duration: 25s;
+    animation-duration: 32s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -184,7 +204,7 @@
 .move-left {
     animation-name: move;
     animation-direction: reverse;
-    animation-duration: 32s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
