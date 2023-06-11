@@ -1,49 +1,10 @@
 @use './variables'; // Importación variables (colores, fuentes, breakpoints) para usarlas en este archivo
 
-// Button + responsiveness
-
-// Mixins: bloques de código que pueden ser reutilizados en otras partes del proyecto
-
-// Sintaxis:
-
-// @mixin example() {
-//     *Estilos aquí*
-// }
-
-// Pueden recibir parámetros:
-// @mixin example($bacground) {
-//     background-color: $background;
-//     *Resto de estilos aquí*
-// }
-
-// Pueden recibir parámetros y setear su valore:
-// @mixin example($bacground: red) {
-//     background-color: $background;
-//     *Resto de estilos aquí*
-// }
-
-
 @mixin center {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-// @mixin font-h2 {
-//     font-family: variables.$font-abril-fatface;
-// }
-
-// @mixin bttn-template ($width: 129px, $height: 32px) {
-//     width: $width;
-//     height: $height;
-//     border: none;
-//     display: flex;
-//     text-align: center;
-//     letter-spacing: 0.05rem;
-//     // align-items: center;
-//     //  font-weight: ;
-
-// }
 
 @mixin responsive($breakpoint) {
 

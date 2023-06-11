@@ -135,4 +135,27 @@
   border: 0.889758px solid #FFFFFF;
   width: 68.98px;
   height: 68.98px;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.move-right {
+  animation-name: move;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.move-left {
+  animation-name: move;
+  animation-direction: reverse;
+  animation-duration: 32s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }/*# sourceMappingURL=style.css.map */

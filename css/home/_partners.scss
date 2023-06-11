@@ -1,6 +1,8 @@
 @use "../variables";
 @use "../mixins";
 
+// @import "../variables"
+
 .partners__container {
     background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
     padding: 24px 16.45px 62px 15.55px;
@@ -42,7 +44,6 @@
     }
 
     .partners-top {
-
         .petrof-img {
             margin: 8px 0 0 18px;
         }
@@ -50,7 +51,6 @@
         .petrof-span {
             margin-right: 30px;
         }
-
 
         @include mixins.responsive(variables.$large) {
             display: flex;
@@ -67,7 +67,6 @@
     }
 
     .partners-mid {
-
         .bookpa-spn {
             margin: 30px;
         }
@@ -90,12 +89,10 @@
             .hefilti-img {
                 margin: 11px 0 0 13px;
             }
-
         }
     }
 
     .partners-bttm {
-
         .pianotwo-spn {
             margin-right: 30px;
         }
@@ -163,4 +160,31 @@
         width: 68.98px;
         height: 68.98px;
     }
+}
+
+// Declarar la animación
+@keyframes move {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.move-right {
+    animation-name: move;
+    // animation-direction: reverse;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.move-left {
+    animation-name: move;
+    animation-direction: reverse;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
