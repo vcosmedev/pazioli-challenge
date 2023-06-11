@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;}
 
 .home {
   width: 100vw;
@@ -38,6 +38,7 @@ font-family: $font-raleway;
   li {
     a {
         font-size: 14px;
+        font-weight: bold;
       text-decoration: none; 
       color: #000; 
       
@@ -50,34 +51,40 @@ font-family: $font-raleway;
 
 
 .button__template,
-
-
-.contact__button{
-  background-color: #000000 ;
-  color: #FFFFFF;
+.contact__button {
+  padding: 3px 30px;
   border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  background-color: black;
+  color: white;
+  font-weight:bold;
 }
-.contact__button:hover{
-  background-color: #3F3F3F;
-}
-.contact__button:active{
-  background-color: #000000;
-
-
-
-
 .button__template--white {
     padding: 3px 25px;
     border-radius: 5px;
     background-color: white;
     color: black;
+    font-weight: bold;
   }
   
+  .button__template,
+  .button__template--white,
+  .contact__button,
+  .icon__button {
+  
+  
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button__template:hover,
+  .button__template--white:hover,
+  .contact__button:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  
+  
+
 
 .icon__button {
   position: relative;
@@ -99,16 +106,16 @@ font-family: $font-raleway;
     background-position: center;
     background-size: contain;
   }
+  //no me jalo//
+  // &:before {
+  //   background-image: url($icon-1);
+  //   left: 0;
+  // }
   
-  &:before {
-    background-image: url($icon-1);
-    left: 0;
-  }
-  
-  &:after {
-    background-image: url($icon-2);
-    right: 0;
-  }
+  // &:after {
+  //   background-image: url($icon-2);
+  //   right: 0;
+  // }
   
 
   
@@ -138,12 +145,13 @@ font-family: $font-raleway;
     }
     
     h1 {
-      font-family: $font-raleway;
-      font-size: 56px;
+      font-family: $font-abril-fatface;
+      font-size: 32px;
       font-weight: 400;
-      line-height: 76px;
-      letter-spacing: 0.05em;
+      line-height: 43px;
       text-align: center;
+      color: #000000;
+      margin: 1.5rem 0;
     }
   }
   
@@ -162,7 +170,7 @@ font-family: $font-raleway;
   }
   
   .social__media a {
-    margin-right: 60px; 
+    margin-right: 90px; 
     margin-bottom: 9px;
  }
   
@@ -173,9 +181,15 @@ font-family: $font-raleway;
   }
   
   .piano__landing {
-    position: relative;
+    
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+    img{
+       width: 100%;
   }
-  
+}
   .social__media {
     position: absolute;
     bottom: 0;
@@ -195,5 +209,3 @@ font-family: $font-raleway;
       }
     }
   }
-
-}
