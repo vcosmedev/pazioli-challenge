@@ -210,3 +210,146 @@ font-family: $font-raleway;
       }
     }
   }
+//Third Section
+  #third__brownpiano-section {
+    height: 769px;
+    background-image: url(/IMG_7332.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    justify-content: space-between;       
+}
+
+.box-title {
+    font-family: $font-raleway;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+    margin: 0;     
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.columns__brownpiano-section {
+    display: flex; 
+    flex-direction: row-reverse;  
+}
+
+#brownpiano-Encabezado {
+    height: 150px;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    justify-content: space-around;
+    
+
+}
+
+ .image__brownpiano-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.brownpiano__container-article {
+    margin-right: 20px;
+    margin-bottom: 0px;
+    color:white;
+    align-items: center;
+    text-align: left;
+}
+
+.little-stars .star {
+   color: yellow;
+  }
+  
+.brown__piano-description {
+    word-wrap: normal
+}
+  
+#horizontal-list {
+  display: flex;
+  list-style: none; 
+  justify-content: center;
+}
+
+#horizontal-list li {
+  margin-right: 20px;
+}
+
+#big-black-buttonpianobrown {
+  height: 30px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  transform: none;
+  margin: 0%;
+  padding: 3px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight:bold;
+}
+    
+
+
+
+@media only screen and (max-width: 599px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 100%;
+    }
+
+    .image__brownpiano-container {height:28%;}
+    .brownpiano__container-article {height: 55%;
+      
+    }
+
+    .columns__brownpiano-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brownpiano__container-article {
+      background-image: url(/Rectangle\ 9.png);
+    }
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 100%;
+    }
+
+    .columns__brownpiano-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+  }
+  
+  @media only screen and (min-width: 960px) and (max-width: 1199px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 50%;
+    }
+  }
+  
+ 
+  
+  
+ 
+   
