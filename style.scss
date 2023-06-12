@@ -31,6 +31,8 @@ justify-content: space-around;
 //third section start
 
 #third__brownpiano-section {
+    height: 769px;
+    height: 761px;
     background-color: orange;
     border: orange;
     margin: 0%;
@@ -44,6 +46,7 @@ justify-content: space-around;
 }
 
 #brownpiano-Encabezado {
+    height: 200px;
     background-color: green;
     text-align: center;
     margin: 0;
@@ -84,6 +87,9 @@ justify-content: space-around;
 }
 
 @media only screen and (max-width: 599px) {
+    #third__brownpiano-section {
+        height: 769px;
+    }
     .image__brownpiano-container,
     .brownpiano__container-article {
       width: 100%;
@@ -122,7 +128,13 @@ justify-content: space-around;
     .image__brownpiano-container,
     .brownpiano__container-article {
       width: 50%;
-    }    
+    }
+    .third__brownpiano-section {
+        width: 960px;
+        left: 0px;
+        top: 926px;
+        border-radius: 0px; 
+    }       
 }
 
 //third section end
