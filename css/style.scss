@@ -218,8 +218,7 @@ font-family: $font-raleway;
     background-size: cover;
     margin: 0%;
     padding: 0%;
-    align-items: center;
-    justify-content: space-between;       
+    align-items: center;       
 }
 
 .box-title {
@@ -228,7 +227,7 @@ font-family: $font-raleway;
     font-weight: 400;
     line-height: 43px;
     text-align: center;
-    color: #000000;
+    color:black;
     margin: 0;     
     align-items: center;
     justify-content: space-evenly;
@@ -243,11 +242,7 @@ font-family: $font-raleway;
     height: 150px;
     align-self: center;
     text-align: center;
-    margin: 0;
-    justify-content: space-around;
-    
-
-}
+  }
 
  .image__brownpiano-container {
     display: flex;
@@ -255,12 +250,11 @@ font-family: $font-raleway;
     align-items: end;
 }
 
-.brownpiano__container-article {
-    margin-right: 20px;
-    margin-bottom: 0px;
+.brownpiano__container-article { 
+    display: inline-block;   
     color:white;
     align-items: center;
-    text-align: left;
+    
 }
 
 .little-stars .star {
@@ -268,30 +262,28 @@ font-family: $font-raleway;
   }
   
 .brown__piano-description {
-    word-wrap: normal
+  display: flex;
+  word-wrap: normal
+
 }
   
 #horizontal-list {
   display: flex;
   list-style: none; 
-  justify-content: center;
+  justify-content: center;  
 }
+list-container ul.horizontal-list li {
+  margin-right: 10px;
+}
+
 
 #horizontal-list li {
   margin-right: 20px;
 }
 
 #big-black-buttonpianobrown {
-  height: 30px;
-  width: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: black;
-  transform: none;
   margin: 0%;
-  padding: 3px 30px;
-  border-radius: 5px;
   color: white;
   font-weight:bold;
 }
@@ -329,6 +321,10 @@ font-family: $font-raleway;
     .columns__brownpiano-section {
         display: flex;
         flex-direction: column;
+    }
+
+    .brownpiano__container-article {
+      background-image: url(/Rectangle\ 9.png);
     }
 
    

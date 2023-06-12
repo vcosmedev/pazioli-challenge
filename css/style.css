@@ -189,7 +189,6 @@
   margin: 0%;
   padding: 0%;
   align-items: center;
-  justify-content: space-between;
 }
 
 .box-title {
@@ -198,7 +197,7 @@
   font-weight: 400;
   line-height: 43px;
   text-align: center;
-  color: #000000;
+  color: black;
   margin: 0;
   align-items: center;
   justify-content: space-evenly;
@@ -213,8 +212,6 @@
   height: 150px;
   align-self: center;
   text-align: center;
-  margin: 0;
-  justify-content: space-around;
 }
 
 .image__brownpiano-container {
@@ -224,11 +221,9 @@
 }
 
 .brownpiano__container-article {
-  margin-right: 20px;
-  margin-bottom: 0px;
+  display: inline-block;
   color: white;
   align-items: center;
-  text-align: left;
 }
 
 .little-stars .star {
@@ -236,6 +231,7 @@
 }
 
 .brown__piano-description {
+  display: flex;
   word-wrap: normal;
 }
 
@@ -245,21 +241,17 @@
   justify-content: center;
 }
 
+list-container ul.horizontal-list li {
+  margin-right: 10px;
+}
+
 #horizontal-list li {
   margin-right: 20px;
 }
 
 #big-black-buttonpianobrown {
-  height: 30px;
-  width: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: black;
-  transform: none;
   margin: 0%;
-  padding: 3px 30px;
-  border-radius: 5px;
   color: white;
   font-weight: bold;
 }
@@ -291,6 +283,9 @@
   .columns__brownpiano-section {
     display: flex;
     flex-direction: column;
+  }
+  .brownpiano__container-article {
+    background-image: url(/Rectangle\ 9.png);
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
