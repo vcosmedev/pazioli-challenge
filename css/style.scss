@@ -1,68 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap');
+/*Adding styles for Gerardo's Section: Features/Piano-Catalogue*/
 
-
-
- // Primary-color
- // $example-f: #fffff
- $black-900: #000000;
- $brown-800: #FFFFFF;
-
- // Secondary-color
- // $example-g: #ggggg
- $yellow-900: #FFBA60;
- $black-700: rgba(0, 0, 0, 0.75);
-
- // Fonts
- // Typography | Fonts
- $font-abril-fatface: 'Abril Fatface', cursive;
- $font-raleway: 'Raleway', sans-serif;
-
- // Breakpoints 
- // Breakpoints
- 
- 
- 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
-.home {
-width: 100%;
-height: 100;
-display: none;
-
-
-
-}
-.nav__bar {
-    height: 55px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.menu__botton {
-display:flex;
-align-items: center;
-justify-content: space-between;
-}
-.menu__list {
-width: 300px;
-    display: flex;
-justify-content: space-around;
-}
-
-.landing__container {
-    display: flex;
-    flex-wrap: wrap;  
-}
-  
-  
-  
-  
-  .piano__container--shopcontainer {
+.piano__container--shopcontainer {
     display: flex;
     justify-content: center;
   
@@ -115,9 +53,6 @@ justify-content: space-around;
     z-index: 1;
   }
 
-
-
-  
   .piano__container--list {
     display:flex; 
     flex-wrap: wrap;
@@ -167,23 +102,20 @@ justify-content: space-around;
     font-weight: 600;
   }
   
-  .piano__card--cart {
+.piano__card--cart {
     width: 36px;
     height: 36px;
     
   }
   
-  .piano__container--image {
+.piano__container--image {
     margin:20px;
     width: 205px;
     height: 166.36px;
   
   }
   
-
-
-  
-  .price__box {
+.price__box {
     width: 100%;
     height: 60px; 
     display: flex;
@@ -193,7 +125,7 @@ justify-content: space-around;
     align-self: flex-end;
     margin-bottom: 2px;
     
-  }
+}
 
 .piano__container--model {
     font-family: $font-abril-fatface;
@@ -203,15 +135,10 @@ justify-content: space-around;
     letter-spacing: .7px;
 }
 
-
-
-
 .piano__container--listitems:nth-child(1) {
     list-style: none;
 
 }
-
-
 
 .piano__container--name {
     display: flex;
@@ -227,10 +154,6 @@ justify-content: space-around;
     border: 1px dashed #DBDBDB;
 }
 
-  
-
-  
-  
 @media only screen and (min-width: 992px) {
     .piano__catalogue .piano__container--card { 
         height: 3  50px;
@@ -238,3 +161,4 @@ justify-content: space-around;
         overflow: visible;
         }
 }
+/*happy face*/ 
