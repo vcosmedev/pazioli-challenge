@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Desafío Simple | Módulo Maquetado</title>
 
   </head>
@@ -12,82 +16,76 @@
   <body>
     <!-- section1 -->
     <section class="home">
-      <div class="nav__bar">
-      <p>logo</p>
-      <div class="menu__botton">
-      <ul class="menu__list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pianos</a></li>
-        <li><a href="#">Soy Estudiante</a></li>
-
-        
-      </ul>
-        <button>Contactanos</button>
-        <button>Carrito</button>
+      <div class="nav__bar"> 
+        <p class="img__icon--container"><img src="./assets/icons/Group 3.svg" alt=""></p>
+        <div class="menu__botton">
+          <ul class="menu__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pianos</a></li>
+            <li><a href="#">Soy Estudiante</a></li>
+          </ul>
+          <button class="contact__button">Contactanos</button>
+          <button class="icon__button"><img src="./assets/icons/Vector-1.png" alt=""></button>
+        </div>
       </div>
-
-      </div>
-
-      <section class="landing__container">
+    </section>
+    <section class="landing__container">
       <p>El arte de tocar piano</p>
       <h1>Instituto Pazioli</h1>
-      
       <div class="button__container">
-      <button class="button__template">Ver cursos</button>
-      <button class="button__template">Adquirir piano</button>
+        <button class="button__template">Ver cursos</button>
+        <button class="button__template--white">Adquirir piano</button>
       </div>
       <div class="piano__landing"><img src="./assets/images/hero/piano-hero.png" alt=""></div>
-      </section>
-      <div class="social__media">
-        <a href="https://www.facebook.com/"><img src="./assets/icons/facebook-icon.svg" alt=""></a>
-        <a href="https://mx.linkedin.com/"><img src="./assets/icons/linkedin-icon.svg" alt=""></a>
-        <a href="https://twitter.com/"><img src="./assets/icons/twitter-icon.svg" alt=""></a>
-
-      </div>
-
     </section>
-     <!-- Section 2  -->
-     <section class="preview__sale">
-      <h2 class="tittle__section2">Conoce nuestro nuevo modelo en clase</h2>
-      <article class="container__section2">
-
-        <div class="img__sale"><img src="" alt="newmodel"></div>
-        <div class="product__description">
-          <h3 class="product__description--subtitle">Nuevo Ebony F228</h3>
-        <div class="product__description--ranking">
-            <div class="product__description--review">
-              <p>Valoracion:</p>
-              <span>
-                <img src="" alt="*"><img src="" alt="*"><img src="" alt="*"><img src="" alt="*"><img src="" alt="*">
-              </span>
-              <h3 class="product__description--subtitle">Desde: $110,00.00</h3>
-              <p class="product_description--details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Aliquet donec purus egestas mattis non orci. Tellus id viverra id egestas. Quis enim, mauris velit feugiat vestibulum adipiscing elementum gravida. Egestas felis pellentesque vitae sed.
-                </p>
-                <ul class="product__description--list">
-                  <li>Nuevo</li>
-                  <li>2021</li>
-                  <li>Acús...</li>
-                  <li>M. Cedro</li>
-                </ul>
-                <button class="button__template">Agregar al carrito</button>
-            </div>
-        </div>
-
-
-
-        </div>
-        
-      </article>
-
-
-
-
-
-     </section>
-
-
-
-
+    <div class="social__media">
+      <a href="https://www.facebook.com/"><img src="./assets/icons/facebook-icon.svg" alt=""></a>
+      <a href="https://mx.linkedin.com/"><img src="./assets/icons/linkedin-icon.svg" alt=""></a>
+      <a href="https://twitter.com/"><img src="./assets/icons/twitter-icon.svg" alt=""></a>
+    </div>
+     <!-- Third Section START -->  
+    <section id="third__brownpiano-section">      
+      <div class="box-title">         <!-- title in the second page one box all width-->
+        <h2 id="brownpiano-Encabezado">Conoce nuestro nuevo <br> modelo en clase</h2>
+      </div>
+      <div class="columns__brownpiano-section">
+        <div class="image__brownpiano-container"> <!-- Piano imagen class -->             
+          <img src="./assets/images/Section 3/Group 2240.png" alt="brown_piano-imagen">        
+        </div>              
+        <article class="brownpiano__container-article"> <!-- artucle section -->
+          <h2><br><br>Nuevo Ebony F228<br></h2>                      
+          <div class="ranking-brownpianostars">
+            Valoración
+            <span class="little-stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </span>  
+          </div>                   
+          <h2>Desde: $110,00.00<br></h2>
+          <p id="brown__piano-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing 
+            elit. Earum, ullam suscipit, quibusdam ratione eaque 
+            illum aliquid officia natus iure ducimus dolores 
+            reprehenderit numquam libero quaerat 
+            ipsum modi enim dolorem cumque. <br>
+          </p>                
+          <div class="list-container">      <!-- little horizontal list brownpiano description-->                    
+            <ul id="horizontal-list">
+              <li><span><small>Nuevo</small></span></li>
+              <li><span><small>2021</small></span></li>
+              <li><span><small>Acús...</small></span></li>
+              <li><span><small>M. Cedro.</small></span></li>
+            </ul>
+            <a href="#" id="button__template">
+              <button type="button" class="big-black-buttonpianobrown">Agregar al carrito</button>
+            </a>
+          </div>
+        </article>    
+      </div> 
+    </section>   <!-- Third section END -->
   </body>
 </html>
+  
