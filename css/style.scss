@@ -28,3 +28,117 @@ width: 300px;
 justify-content: space-around;
 }
 
+//third section start
+
+#third__brownpiano-section {
+    height: 769px;
+    height: 761px;
+    background-color: orange;
+    border: orange;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;    
+}
+
+.columns__brownpiano-section {
+    display: flex; 
+    flex-direction: row-reverse;  
+}
+
+#brownpiano-Encabezado {
+    height: 200px;
+    background-color: green;
+    text-align: center;
+    margin: 0;
+}
+
+.image__brownpiano-container {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.brownpiano__container-article {
+    color: white;
+    background-color: blue;
+    align-items: center;
+    text-align: center;
+    justify-content: baseline;
+}
+
+.little-stars .star {
+    color: yellow;
+}
+  
+.brown__piano-description {
+  text-align: justify;
+  word-wrap: normal
+}
+  
+.list-container ul.horizontal-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.big-black-buttonpianobrown {
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width: 599px) {
+    #third__brownpiano-section {
+        height: 769px;
+    }
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 100%;
+    }
+
+    .image__brownpiano-container {height:28%;}
+    .brownpiano__container-article {height: 55%;      
+    }
+
+    .columns__brownpiano-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 100%;
+    }
+
+    .columns__brownpiano-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 50%;
+    }
+}
+  
+@media only screen and (min-width: 1200px) {
+    .image__brownpiano-container,
+    .brownpiano__container-article {
+      width: 50%;
+    }
+    .third__brownpiano-section {
+        width: 960px;
+        left: 0px;
+        top: 926px;
+        border-radius: 0px; 
+    }       
+}
+
+//third section end
+  
+  
+ 
+
