@@ -500,9 +500,9 @@
 }
 
 
-@media only screen and (min-width: 992px) {
-  .piano__catalogue .piano__container--card {}
-}
+// @media only screen and (min-width: 992px) {
+//   .piano__catalogue .piano__container--card {}
+// }
 
 /*   
 finaliza seccion 4 (gerardo) */
@@ -511,6 +511,161 @@ finaliza seccion 4 (gerardo) */
 
 
 //Termina Gerardo
+
+// ⬇ INICIO DANI S
+.form_contact {
+  font-size: 24px;
+}
+
+.form_text {
+  font-size: 18px;
+  font-family: "Abril Fatface";
+}
+
+.name_line_container {
+  font-family: Arial Black;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+}
+
+
+
+
+.controls {
+  background-color: black;
+  width: 288px;
+  height: 36px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+}
+
+.input_container_email {
+  background-color: black;
+  width: 288px;
+  height: 36px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+}
+
+.input_container_phone {
+  background-color: black;
+  width: 288px;
+  height: 36px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid #FFFFFF;
+}
+
+.button {
+  height: 32px;
+  width: 288px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 75px;
+  cursor: pointer;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/pazioli.png);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%), url("./img/pazioli.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+
+#cuentanos_mas {
+  height: 148px;
+  width: 288px;
+}
+
+
+
+@media (min-width: 992px) {
+  body {
+    background-color: white;
+  }
+
+  #nombre {
+    width: 464px;
+    height: 36px;
+  }
+
+  .tellus_box {
+    margin-top: 7px;
+  }
+
+  #cuentanos_mas {
+    height: 148px;
+    width: 464px;
+  }
+
+  .button_box {
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+
+  .button {
+    width: 464px;
+    height: 32px;
+
+  }
+
+  .form_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .input_container_phone {
+    width: 224px;
+    height: 36px;
+  }
+
+  .input_container_email {
+    width: 224px;
+    height: 36px;
+  }
+
+  .text_box {
+    width: 561px;
+    height: 57px;
+  }
+
+  .form_contact {
+
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text_box {
+    width: 561px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+// FIN DANI S
 
 // ⬇ INICIO VÍCTOR
 .partners__container {
