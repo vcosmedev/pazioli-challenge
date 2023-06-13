@@ -1,19 +1,15 @@
-// // Import Variables, Mixins, Base, Animations
-// @use "./variables";
-// @use "./mixins";
-// @use "./base";
-// @use "./animations";
-
-// // Components
-// @use "./components/button";
-
-// // Sections
-// @use "./home/partners";
-
 @import "./variables";
 @import "./mixins";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+
+// ⬇ VÍCTOR
 .partners__container {
     background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
     padding: 24px 16.45px 62px 15.55px;
@@ -219,3 +215,5 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+// ⬆ VÍCTOR
