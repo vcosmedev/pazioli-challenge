@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./mixins";
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,6 @@
     margin-right: 25px;
   }
   
-
 .nav__bar {
   height: 55px;
   display: flex;
@@ -41,14 +42,9 @@ font-family: $font-raleway;
         font-weight: bold;
       text-decoration: none; 
       color: #000; 
-      
-
-    
     }
   }
 }
-
-
 
 .button__template,
 .contact__button {
@@ -58,6 +54,7 @@ font-family: $font-raleway;
   color: white;
   font-weight:bold;
 }
+
 .button__template--white {
     padding: 3px 25px;
     border-radius: 5px;
@@ -70,8 +67,6 @@ font-family: $font-raleway;
   .button__template--white,
   .contact__button,
   .icon__button {
-  
-  
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
@@ -82,11 +77,7 @@ font-family: $font-raleway;
     color: white;
   }
   
-  
-  
-
-
-.icon__button {
+  .icon__button {
   position: relative;
   width: 40px; 
   height: 40px; 
@@ -210,7 +201,9 @@ font-family: $font-raleway;
       }
     }
   }
-  //Third Section 
+  // FIN AZAEL
+
+// INICIO LIBARDO
   #third__brownpiano-section {
     height: 769px;
     height: 761px;
@@ -314,3 +307,213 @@ font-family: $font-raleway;
       border-radius: 0px;
     }
   }
+
+// FIN LIBARDO
+
+// ⬇ INICIO VÍCTOR
+.partners__container {
+    background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
+    padding: 24px 16.45px 62px 15.55px;
+    display: flex;
+
+    @include center;
+
+    @include responsive($large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 83px;
+        padding-top: 49px;
+
+    }
+
+    .partners__title {
+        margin-bottom: 16px;
+        // @mixin h2-font-style
+        font-family: $font-abril-fatface;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 288px;
+
+        @include responsive($large) {
+            font-size: 32px;
+            margin-bottom: 49px;
+            width: 470px;
+
+        }
+    }
+
+    .partners-top {
+
+        .partners-block__items--right {
+            border-bottom-right-radius: 250px;
+            border-top-right-radius: 250px;
+        }
+
+        .petrof-img {
+            margin: 8px 0 0 18px;
+        }
+
+        .petrof-span {
+            margin-right: 30px;
+        }
+
+        @include responsive($large) {
+            display: flex;
+            justify-content: center;
+
+            .partners-block__items--right {
+                border-bottom-right-radius: 1000px;
+                border-top-right-radius: 1000px;
+            }
+
+            .paris-pian-spn {
+                margin-right: 30px;
+            }
+
+            .paris-pian-img {
+                margin: 18px 0 0 2px;
+            }
+        }
+    }
+
+    .partners-mid {
+        .bookpa-spn {
+            margin: 30px;
+        }
+
+        .bookpa-img {
+            margin: 10px 0 0 10px;
+        }
+
+        .partners-block__items--left {
+            border-bottom-left-radius: 250px;
+            border-top-left-radius: 250px;
+        }
+
+        @include responsive($large) {
+            display: flex;
+
+            .partners-block__items--left {
+                border-bottom-left-radius: 1000px;
+                border-top-left-radius: 1000px;
+            }
+
+            .hefilti-spn {
+                margin-left: 30px;
+            }
+
+            .yamaha-spn {
+                margin-left: 30px;
+            }
+
+            .hefilti-img {
+                margin: 11px 0 0 13px;
+            }
+        }
+    }
+
+    .partners-bttm {
+
+        .pianotwo-spn {
+            margin-right: 30px;
+        }
+
+        .pianotwo-img {
+            margin: 13px;
+        }
+
+        .piafmar-img {
+            margin: 12px 0 0 20px;
+        }
+
+        .piafmar-spn {
+            margin-right: 30px;
+        }
+
+        .partners-block__items--right {
+            border-bottom-right-radius: 250px;
+            border-top-right-radius: 250px;
+        }
+
+        @include responsive($large) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .list-style {
+        list-style-type: none;
+    }
+
+    .partners-block__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        font-family: $font-raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        font-variant: small-caps;
+        color: $brown-800;
+        background-color: $black-900;
+        width: 288px;
+        height: 93px;
+        margin: 32px;
+        padding: 10px;
+        border-radius: 1000px;
+    }
+
+    .partners-block__items--hidden {
+        display: none;
+
+        @include responsive($large) {
+            display: contents;
+        }
+    }
+
+    .bg-icon {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 1000px;
+        border: 0.889758px solid #FFFFFF;
+        width: 68.98px;
+        height: 68.98px;
+    }
+}
+
+// Declaración de la animación
+@keyframes move {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+
+.move-right {
+    animation-name: move;
+    animation-duration: 43s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.move-left {
+    animation-name: move;
+    animation-direction: reverse;
+    animation-duration: 43s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+// ⬆ FIN VÍCTOR

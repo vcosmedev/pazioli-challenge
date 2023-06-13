@@ -1,0 +1,17 @@
+@use './variables'; // Importación variables (colores, fuentes, breakpoints) para usarlas en este archivo
+
+@mixin center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsive($breakpoint) {
+
+    @if ($breakpoint ==variables.$large) {
+        @media screen and (min-width: variables.$large) {
+            @content;
+        }
+    }
+
+}
