@@ -356,22 +356,23 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .piano__catalogue {
-  margin-top: 70px; 
-  height:auto;
+  margin-top: 70px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap:nowrap;
-  align-items: center; 
-  
+  flex-wrap: nowrap;
+  align-items: center;
+
 }
 
-.piano__container{
+.piano__container {
   width: 100vw;
   height: 700px;
   background-color: #ffffff;
-  display:flex;
+  display: flex;
   justify-content: center;
   margin-top: 20px;
   flex-wrap: wrap;
@@ -382,7 +383,7 @@
 
 .piano__catalogue .piano__container--card {
   width: 250px;
-  height:350px;
+  height: 350px;
   background: #ffffff;
   margin-top: 24px;
   box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
@@ -398,7 +399,7 @@
 }
 
 .piano__container--list {
-  display:flex; 
+  display: flex;
   flex-wrap: wrap;
   margin: 9px;
   width: 100%;
@@ -410,24 +411,24 @@
   font-size: 14px;
 }
 
-.piano__container--listitems{
+.piano__container--listitems {
   margin-left: 0;
-  margin-right:0px;
+  margin-right: 0px;
 }
 
 .piano__container--features {
-  display:flex; 
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
   height: 26px;
   justify-content: center;
-  
+
 
 }
 
 .piano__container--pricebox {
-  width: 161px; 
+  width: 161px;
   height: 36px;
   border: 1px solid black;
   border-radius: 8px;
@@ -436,7 +437,7 @@
   display: flex;
   justify-content: center;
   font-family: 'Raleway', sans-serif;
-  color:  rgba(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   font-weight: 400;
 }
 
@@ -449,11 +450,11 @@
 .piano__card--cart {
   width: 36px;
   height: 36px;
-  
+
 }
 
 .piano__container--image {
-  margin:20px;
+  margin: 20px;
   width: 205px;
   height: 166.36px;
 
@@ -461,21 +462,21 @@
 
 .price__box {
   width: 100%;
-  height: 60px; 
+  height: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-self: flex-end;
   margin-bottom: 2px;
-  
+
 }
 
 .piano__container--model {
   font-family: 'Abril Fatface', cursive;
   display: flex;
   justify-content: flex-start;
-  margin-left:  10px;
+  margin-left: 10px;
   letter-spacing: .7px;
 }
 
@@ -487,23 +488,22 @@
 .piano__container--name {
   display: flex;
   width: 100%;
-  height: 28px; 
+  height: 28px;
   margin-top: 15px;
   align-items: center;
 }
 
 .piano__container--vector {
-  width: 232px; 
+  width: 232px;
   height: 0px;
   border: 1px dashed #DBDBDB;
 }
 
 
 @media only screen and (min-width: 992px) {
-  .piano__catalogue .piano__container--card { 
-      
-  }
-    }
+  .piano__catalogue .piano__container--card {}
+}
+
 /*   
 finaliza seccion 4 (gerardo) */
 
@@ -721,3 +721,55 @@ finaliza seccion 4 (gerardo) */
 }
 
 // ⬆ FIN VÍCTOR
+
+// ⬇ INICIO DANI G
+@media screen and (max-width: 992px) {
+  .container__footer_all {
+    flex-direction: column;
+  }
+
+  .container__AboutUs {
+    padding-left: 50px;
+  }
+
+  .container__address {
+    padding-left: 111px;
+  }
+}
+
+.container__footer_all {
+  max-width: 1370px;
+  height: 450px;
+}
+
+.container__footer_all {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container__CR {
+  display: flex;
+  justify-content: center;
+  max-width: 1370px;
+}
+
+.container__Powered {
+  display: flex;
+  justify-content: center;
+  max-width: 1370px;
+}
+
+footer {
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%) bottom center;
+}
+
+.container__AboutUs--List {
+  list-style-type: none;
+}
+
+.anchore__none {
+  text-decoration: none;
+}
+
+// ⬆ FIN DANI G
