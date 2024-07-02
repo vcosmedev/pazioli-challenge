@@ -499,11 +499,15 @@
 }
 
 
+
 @media only screen and (min-width: 992px) {
-  .piano__catalogue .piano__container--card { 
-      
-  }
-    }
+      .piano__container {
+       width: 100vw;
+       height: 700px;
+       margin-bottom: 200px;
+     }
+     }
+     
 /*   
 finaliza seccion 4 (gerardo) */
 
